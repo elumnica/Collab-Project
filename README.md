@@ -17,6 +17,8 @@
 ## Features
 1.) user input region location - hotspot birds
 2.) user inputs location - give species of birds near my location
+3.) User creates login [name/address/email/password] 
+4.) User can put birds on Watch-List. Can Mark Birds as Spotted. 
 
 ## 3rd Party Frameworks
 1.) CSS Framework - Materialize CSS   :   https://materializecss.com/getting-started.html
