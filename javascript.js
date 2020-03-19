@@ -1,10 +1,13 @@
-$.ajax({
-    url: 'https://api.ebird.org/v2/data/obs/{{regionCode}}/recent/notable?detail=full',
-    dataType: 'json',
-    success: function(data) {
-      console.log(data);
-    }
-  });
+var settings = {
+  "url": "https://api.ebird.org/v2/data/obs/KZ/recent",
+  "method": "GET",
+  "timeout": 0,
+  "headers": {
+    "X-eBirdApiToken": "b85tnspba3tn"
+  },
+};
 
-// curl --location --request GET 'https://api.ebird.org/v2/data/obs/{{regionCode}}/recent/notable?detail=full' \
-// --header 'X-eBirdApiToken: {{x-ebirdapitoken}}'
+$.ajax(settings).done(function (response){
+  console.log(response);
+});
+
