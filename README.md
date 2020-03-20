@@ -10,19 +10,19 @@
 * Database - Species API - https://www.gbif.org/developer/species
 
 ### Search for more API's
-1.) https://rapidapi.com/
-2.) https://marketplace.zoom.us/apps?category=featured
-3.) https://developer.here.com/projects
+1. https://rapidapi.com/
+2. https://marketplace.zoom.us/apps?category=featured
+3. https://developer.here.com/projects
 
 ## Features
-1.) user input region location - hotspot birds
-2.) user inputs location - give species of birds near my location
-3.) User creates login [name/address/email/password] 
-4.) User can put birds on Watch-List. Can Mark Birds as Spotted. 
+1. user input region location - hotspot birds
+2. user inputs location - give species of birds near my location
+3. User creates login [name/address/email/password] 
+4. User can put birds on Watch-List. Can Mark Birds as Spotted. 
 
 ## 3rd Party Frameworks
-1.) CSS Framework - Materialize CSS   :   https://materializecss.com/getting-started.html
-2.) 3rd Party - Jquery		      :   w3schools.com/jquery/jquery_get_started.asp
+1. CSS Framework - Materialize CSS   :   https://materializecss.com/getting-started.html
+2. 3rd Party - Jquery		      :   w3schools.com/jquery/jquery_get_started.asp
 
 
 # Control-Flow
