@@ -1,13 +1,27 @@
+
+  document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.parallax');
+    var instances = M.Parallax.init(elems, options);
+  });
+
+  // Or with jQuery
+
+  $(document).ready(function(){
+    $('.parallax').parallax();
+  });
+
+
 var settings = {
   "url": "https://api.ebird.org/v2/data/obs/KZ/recent",
   "method": "GET",
   "timeout": 0,
   "headers": {
-    "X-eBirdApiToken": "b85tnspba3tn"
+    "X-eBirdApiToken": "b85tnspba3tn", //Minjae's Key
+    "X-eBirdApiToken": "vtvt2pqn28os" //Joe's Key
   },
 };
 
-let inputBird =prompt("Search a bird").toLowerCase();
+// let inputBird =prompt("Search a bird").toLowerCase();
 
 $.ajax(settings).done(function (response){
 

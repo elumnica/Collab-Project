@@ -16,18 +16,50 @@
 
     </head>
     <body>
-        <!-- NAV BAR -->
-        <div class = "container"> 
-            <nav>
-               <div class = "nav-wrapper">
-                  <div class = "col s12">
-                    <a href = "./index.html" class = "breadcrumb">Home</a>
-                    <a href = "./createAccount.html" class = "breadcrumb">Account</a>
-                    <a href = "./speciesIndex.html" class = "breadcrumb">Species Index</a>
-                  </div>
-               </div>
-            </nav>
-        <!-- END NAV -->
+
+
+               <!-- NAV BAR -->
+         
+         <!-- Dropdown Structure -->
+         <ul id="dropdown1" class="dropdown-content">
+            <li><a href="#!">one</a></li>
+            <li><a href="#!">two</a></li>
+            <li class="divider"></li>
+            <li><a href="#!">three</a></li>
+         </ul>
+         <nav>
+            <div class="nav-wrapper">
+               <a href="#!" class="brand-logo"><i class="material-icons">cloud</i>BirdFinder</a>
+            <ul class="right hide-on-med-and-down">
+               <li><a href="./index.html">Home</a></li>
+               <li><a href="./speciesIndex.html">Bird-dex</a></li>
+               <li><a href="./createAccount.html">My Profile</a></li>
+               <!-- Dropdown Trigger -->
+               <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Dropdown<i class="material-icons right">arrow_drop_down</i></a></li>
+            </ul>
+            </div>
+         </nav>
+
+         <!-- PARALLAX-CONTAINER -->
+        <div id="index-banner" class="parallax-container">
+         <div class="section no-pad-bot">
+           <div class="container">
+             <br><br>
+             <h1 class="header center teal-text text-lighten-2">Bird-dex</h1>
+             <div class="row center">
+               <h5 class="header col s12 light"></h5>
+               <h5 class="header col s12 light"></h5>
+             </div>
+             <div class="row center">
+               <a href="#" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Get Started</a>
+             </div>
+             <br><br>        
+           </div>
+         </div>
+         <div class="parallax"><img src="./assets/background3.jpeg" alt="Unsplashed background img 1"></div>
+       </div>
+     <!-- PARALLAX-CONTAINER END -->
+
 
         <!-- PARALLAX-CONTAINER -->
         <div id="index-banner" class="parallax-container">
