@@ -1,23 +1,10 @@
 
-  document.addEventListener('DOMContentLoaded', function() {
-    var elems = document.querySelectorAll('.parallax');
-    var instances = M.Parallax.init(elems, options);
-  });
-
-  // Or with jQuery
-
-  $(document).ready(function(){
-    $('.parallax').parallax();
-  });
-
-
 var settings = {
   "url": "https://api.ebird.org/v2/data/obs/KZ/recent",
   "method": "GET",
   "timeout": 0,
   "headers": {
     "X-eBirdApiToken": "b85tnspba3tn", //Minjae's Key
-    "X-eBirdApiToken": "vtvt2pqn28os" //Joe's Key
   },
 };
 
@@ -39,6 +26,22 @@ $.ajax(settings).done(function (response){
   // used this to get all of the common names of the bird and uploaded it to the html
 
 });
+
+
+
+// PARALLAX FUNCTIONALITY
+document.addEventListener('DOMContentLoaded', function() {
+  var elems = document.querySelectorAll('.parallax');
+  var instances = M.Parallax.init(elems, options);
+});
+
+// Or with jQuery
+
+$(document).ready(function(){
+  $('.parallax').parallax();
+});
+// PARALLAX FUNCITONALITY
+
 
 /* *********** SOME QUICK API NOTES **************** 
  (KEYS BELOW)
