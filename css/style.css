@@ -5,6 +5,60 @@
   padding: 0;
   box-sizing: inherit; }
 
+  /* #download-button:link,
+  #download-button:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 15px 40px;
+    display: inline-block;
+    border-radius: 100px;
+    transition: all .2s;
+    position: relative;
+  }
+
+  #download-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0,0,0 .2);
+  }
+
+  #download-button:active {
+    transform: translate(-1px);
+    box-shadow: 0 5px 10px rgba(0,0,0 .2);
+
+  }
+
+  #download-button {
+    background-color: rgb(167, 51, 71);
+    color: white;
+  }
+
+  #download-button::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .4s;
+  }
+
+  #download-button::after {
+    background-color: rgb(167, 51, 71);
+  }
+
+  #download-button:hover::after {
+    transform: scaleX(1.4 ) scaleY(1.6);
+    opacity: 0;
+  }
+
+  /* #download-button-animated {
+    animation: moveInBottom .5s ease-out .75s;
+    animation-fill-mode: backwards; */
+  } */
+
   .navigation__checkbox {
     display: none; }
   
