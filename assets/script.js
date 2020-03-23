@@ -149,3 +149,42 @@ var queryURLObject = {
 
 
 */
+var settings2 = {
+    "url": "https://restcountries.eu/rest/v2/all",
+    "method": "GET",
+    "timeout": 0,
+    
+  };
+  // $.ajax(settings2).done(function(rcodes){
+  //   console.log(rcodes)
+  // });
+  //  Country Codes API END
+  var geoQuery = {
+    "url": "https://api.ebird.org/v2/data/obs/US-NY/recent",
+    "method": "GET",
+    "timeout": 0,
+    "headers": {
+      "X-eBirdApiToken": "vtvt2pqn28os"
+    },
+  };
+  let temp = [];
+  $.ajax(geoQuery).done(function(response) {
+    console.log(response);
+    let NyBirds = {};
+    let locations = {};
+    let bName= [];
+    let region = [];
+    let coord = [];
+    for(let i=0; i< response.length; i++){
+      locations[response[i].locName] = `${response[i].lat} , ${response[i].lng}`
+      NyBirds[response[i].comName] = locations
+      bName.push(response[i].comName)
+      region.push(response[i].locName)
+      coord.push(`${response[i].lat},${response[i].lng}`)
+      
+    }
+    console.log(bName)
+    console.log(region)
+    console.log(coord)
+    console.log(NyBirds)
+  });
